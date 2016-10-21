@@ -1,5 +1,7 @@
 package ingjmcaicedo.matcher.model;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 
 public class Player {
@@ -8,6 +10,8 @@ public class Player {
 	private String id;
 	private String document;
 	private String name;
+	
+	private List<Team> teams;
 	
 	public String getId() {
 		return id;
@@ -26,6 +30,12 @@ public class Player {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public List<Team> getTeams() {
+		return teams;
+	}
+	public void setTeams(List<Team> teams) {
+		this.teams = teams;
 	}
 	
 }
