@@ -1,10 +1,7 @@
 package ingjmcaicedo.matcher.model;
 
-import org.springframework.data.annotation.Id;
-
 public class Team {
 
-	@Id
 	private String id;
 	private String name;
 	

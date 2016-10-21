@@ -1,14 +1,11 @@
-package ingjmcaicedo.matcher.model;
+package ingjmcaicedo.matcher.dto;
 
-import java.util.List;
-
-public class Player {
+public class PlayerDTO {
 
 	private String document;
 	private String name;
-	
-	private List<Team> teams;
-	
+	private String teamName;
+
 	public String getDocument() {
 		return document;
 	}
@@ -21,11 +18,11 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public List<Team> getTeams() {
-		return teams;
+	public String getTeamName() {
+		return teamName;
 	}
-	public void setTeams(List<Team> teams) {
-		this.teams = teams;
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
 	}
 	
 }
